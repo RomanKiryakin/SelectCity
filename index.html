@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/assets/fonts/fonts.css">
+    <script src="src/js/main.js"></script>
+    <title>СТУДИКА</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <div class="header__container_top">
+            <div class="mobile-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Вузы</a></li>
+                    <li><a class="menu__item" href="#">Колледжи</a></li>
+                    <li><a class="menu__item" href="#">Техникумы</a></li>
+                    <li><a class="menu__item" href="#">Училища</a></li>
+                    <li><a class="menu__item" href="#">Профессии</a></li>
+                    <li><a class="menu__item" href="#">Отзывы</a></li>
+                    <li><a class="menu__item" href="#">Учебным заведениям</a></li>
+                    <li><a class="menu__item" href="#">Тест на профориентацию</a></li>
+                </ul>
+            </div>
+            <ul class="header__leftside">
+                <li class="header__logo">
+                    <svg width="88" height="24" viewBox="0 0 88 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.851 17.4978H10.3601C10.1874 18.6703 9.66941 19.6114 8.80607 20.3213C7.95352 21.0313 6.86355 21.3862 5.53617 21.3862C3.7987 21.3862 2.43894 20.843 1.45689 19.7566C0.485629 18.6595 0 17.2128 0 15.4165C0 13.6202 0.491025 12.1788 1.47307 11.0924C2.45512 9.99529 3.80949 9.44672 5.53617 9.44672C6.7988 9.44672 7.851 9.77479 8.69276 10.4309C9.53451 11.0763 10.0525 11.9368 10.2468 13.0124H7.7215C7.45171 12.0659 6.72326 11.5926 5.53617 11.5926C4.54333 11.5926 3.78251 11.9529 3.25371 12.6736C2.73571 13.3835 2.47671 14.2978 2.47671 15.4165C2.47671 16.5351 2.73571 17.4548 3.25371 18.1755C3.78251 18.8854 4.54333 19.2403 5.53617 19.2403C6.1513 19.2403 6.65851 19.0897 7.05781 18.7886C7.46789 18.4766 7.73229 18.0464 7.851 17.4978Z" fill="#222222"/>
+                        <path d="M22.012 9.65647V11.7701H18.4184V21.1765H16.0064V11.7701H12.4127V9.65647H22.012Z" fill="#222222"/>
+                        <path d="M28.6894 14.8195H29.1427L31.587 9.65647H34.0313L28.4952 21.1765H26.0832L27.7343 17.7237L23.4608 9.65647H25.9861L28.6894 14.8195Z" fill="#222222"/>
+                        <path d="M45.1637 19.0306H46.8149V24H44.4677V21.1765H36.8757V24H34.5285V19.0306H35.7263C36.6436 17.4064 37.1023 15.126 37.1023 12.1896V9.65647H45.1637V19.0306ZM42.8165 19.0306V11.8024H39.3362V12.8188C39.3362 15.5079 38.9477 17.5785 38.1707 19.0306H42.8165Z" fill="#222222"/>
+                        <path d="M49.5559 9.65647H51.806V17.6914H52.2268L56.3871 9.65647H59.6408V21.1765H57.3745V12.964H56.9536L52.6963 21.1765H49.5559V9.65647Z" fill="#222222"/>
+                        <path d="M64.3366 21.1765V9.65647H66.7485V14.158H69.4843L71.6048 9.65647H74.0977L71.5077 15.2551L74.2434 21.1765H71.7505L69.5004 16.3361H66.7485V21.1765H64.3366Z" fill="#222222"/>
+                        <path d="M85.5557 21.1765L84.6168 18.0625H80.2137L79.2749 21.1765H76.8953L80.5699 9.65647H84.3092L88 21.1765H85.5557ZM82.0429 11.9637L80.8289 15.965H83.9693L82.7552 11.9637H82.0429Z" fill="#222222"/>
+                        <path d="M38.1583 0H35.629L32.5938 6.05042H35.1231L38.1583 0Z" fill="#222222"/>
+                    </svg>
+                </li>
+                <li class="header__city">
+                        <div class="drop-block header__city-block">
+                            <div class="header__city-icon">
+                                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.554043 10.5638L14.9471 0.594936C15.4542 0.243753 16.0659 0.718264 15.8519 1.29672L9.77637 17.717C9.57036 18.2738 8.81349 18.323 8.61362 17.7927L6.68389 12.6718C6.60699 12.4677 6.42672 12.3279 6.20994 12.3042L0.770016 11.7088C0.206593 11.6471 0.0660077 10.9018 0.554043 10.5638Z" fill="#A7A7A7"/>
+                                </svg>
+                            </div>
+                            <div id="saveCities" class="header__city-name">Любой регион</div>
+                        </div>
+                        <div id="header__city-search" class="header__city-search">
+                            <div class="header__city-search-top">
+                                <input id="search" class=" search header__city-search-input" placeholder="Регион, город, населенный пункт" type="text">
+                                <div id="selected">
+                                </div>
+                            </div>
+                            <div class="header__city-search-bottom">
+                                <svg class="header__city-preloader" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                                    <circle id="c" fill="none" stroke-width="1" stroke-linecap="round" stroke="black" cx="66" cy="45" r="5" />
+                                </svg>
+                                <ul class="header__city-list">
+                                </ul>
+                            </div>
+                            <button id="saveButton" class="header__city-search-button">Сохранить</button>
+                        </div>
+                </li>
+                <li class="header__speciality">
+                        <svg class="header-speciality__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7 15.65C9.7 12.3639 12.3639 9.7 15.65 9.7C18.9361 9.7 21.6 12.3639 21.6 15.65C21.6 17.2528 20.9662 18.7076 19.9356 19.7774C19.9063 19.7999 19.8781 19.8246 19.8513 19.8515C19.8245 19.8783 19.7998 19.9065 19.7773 19.9358C18.7075 20.9663 17.2527 21.6 15.65 21.6C12.3639 21.6 9.7 18.9361 9.7 15.65ZM20.4249 21.6272C19.1162 22.674 17.4562 23.3 15.65 23.3C11.425 23.3 8 19.875 8 15.65C8 11.425 11.425 8 15.65 8C19.875 8 23.3 11.425 23.3 15.65C23.3 17.4563 22.674 19.1164 21.627 20.4251L24.7509 23.549C25.0828 23.8809 25.0828 24.4191 24.7509 24.751C24.4189 25.083 23.8807 25.083 23.5488 24.751L20.4249 21.6272Z" fill="#A7A7A7"/>
+                        </svg>
+                        <input class="header-speciality__input" type="text" placeholder="Учебное заведение, специальность или профессия" value="">
+                </li>
+            </ul>
+            <ul class="header__account">
+                <li class="header-account__login">Войти</li>
+            </ul>
+        </div>
+        <div class="header__container_bottom">
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Вузы</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Колледжи</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Техникумы </a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Училища</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Специальности</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Профессии</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Отзывы</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Учебным заведениям</a></li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="">Тест на профориентацию</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+</body>
+</html>
